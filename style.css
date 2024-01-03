@@ -1,0 +1,569 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    margin-bottom: 2.5vw;
+    background-color: gainsboro;
+}
+#tresc {
+    background-color: none;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+#title{
+    width: 100%;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 3vh;
+    background-color: dimgray;
+}
+#title h1 {
+    color: white;
+    font-weight: 900;
+    font-family: Arial;
+    font-size: 4vw;
+}
+h1#logo {
+    background-color: gainsboro;
+    font-family: "Comic Sans MS";
+    text-shadow: 3px 3px 5px #000000;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: 1vw groove gray;
+}
+.cntnt {
+    width: 100%;
+    text-align: left;
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    border-radius: 18px;
+    margin-bottom: 1.4vh;
+}
+.cntnt p, li ,table, form{
+    font-family: Calibri;
+    font-size: 1.4vw;
+}
+input, select, textarea {
+    padding: 0.4vw;
+    width: 25%;
+    border: 1px solid black;
+    font-family: Calibri;
+    font-size: 1vw;
+    border-radius: 5px;
+}
+.radio {
+    width: auto;
+    height: auto;
+}
+#pytanie {
+    margin: 0;
+}
+.cntnt h2 {
+    font-family: Calibri;
+    font-size: 2.3vw;
+    text-align: center;
+}
+.cntnt table {
+    font-family: Calibri;
+    text-align: center;
+}
+.cntnt table td {
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    background-color: gainsboro;
+    border-radius: 18px;
+}
+#tresc div:not(.wbr, #wbrdivy, #fotypc, .fotytab) {
+    background-color: darkgrey;
+}
+.mnu {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    border-radius: 18px;
+    margin-bottom: 3vh;
+}
+.mnu p {
+    font-family: Calibri;
+    font-size: 1.4vw;
+}
+.mnuikona {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.wbr {
+    width: 100%;
+}
+.wbr table {
+    width: 100%;
+    border-spacing: 1vw;
+}
+.wbr table td {
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    background-color: darkgrey;
+    border-radius: 18px;
+    font-family: Calibri;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.opc a {
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.opc:hover {
+    cursor: pointer;
+    animation-name: wybor;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#dropdown {
+    position: fixed;
+    top: 4vh;
+    left: 1.5vw;
+    opacity: 0.9;
+}
+.dropbtn {
+    background-color: dimgray;
+    color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    font-size: 16px;
+    border: 2px solid gray;
+    cursor: pointer;
+    font-size: 2vw;
+}
+.dropdown-content {
+    display: none;
+    background-color: whitesmoke;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    font-family: Calibri;
+    font-size: 24px;
+    padding: 1.5vh 1vw;
+    text-decoration: none;
+    display: block;
+}
+#pwrtpc {
+    position: fixed;
+    right: 0.55vw;
+    bottom: 1vh;
+}
+#pwrtpc a {
+    display: block;
+    background-color: dimgray;
+    padding: 1vw;
+    border-radius: 18px;
+}
+#pwrtpc a img {
+    width: 30px;
+    transform: rotate(270deg);
+}
+#mnuzgory {
+    display: none;
+}
+#wbrdivy {
+    display: none;
+}
+.topnav {
+    display: none;
+}
+#fotypc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin: 10px;
+}
+#fotypc img {
+    width: 15vw;
+    height: 10vw;
+    object-fit: cover;
+    border: 2px solid dimgray;
+    border-radius: 17px;
+}
+#fotypc img:hover {
+    cursor: pointer;
+    animation-name: wyborimg;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#galeria {
+    height: 20vw;
+}
+.fotytab {
+    display: none;
+}
+#fotytel {
+    display: none;
+}
+.gallery-full-image-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.gallery-full-image-container img:not(.nastprzed) {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.nastprzed {
+    height: 3vw;
+}
+#poprzednie{
+    transform: rotate(180deg);
+}
+.exit-gallery-button {
+    font-family: Calibri;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: black;
+    border: none;
+    padding: 2vw 3vw;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #stopka {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: dimgray;
+    color: white;
+    font-family: Calibri;
+    font-size: 1.9vw;
+    text-align: center;
+  }
+  #powrotzform {
+    position:absolute;
+    top: 4vh;
+    left: 3vw;
+    background-color: gray;
+    border-radius: 18px;
+    padding: 0.5vw;
+  }
+  #powrotzform img {
+    height: 5vw;
+    transform: rotate(180deg);
+  }
+.show {display: block;}
+
+@keyframes wyborimg {
+    0% {
+        width: 15vw;
+        height: 10vw;
+        }
+    5% {
+        width: 16vw;
+        height: 11vw;
+    }
+    20% {
+        transform: rotate(5deg);
+        width: 16vw;
+        height: 11vw;
+    }
+    80% {
+        transform: rotate(-5deg);
+        width: 16vw;
+        height: 11vw;
+    }
+    95% {
+        transform: rotate(0deg);
+        width: 16vw;
+        height: 11vw;
+    }
+    100% {
+        width: 15vw;
+        height: 10vw;
+        }
+}
+
+@keyframes wybor {
+    from {background-color: darkgrey;}
+    to {background-color: red;}
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin-bottom: 4vw;
+    }
+    #powrotzform img {
+        height: 8vw;
+      }
+    #title h1 {
+        font-size: 5.4vw;
+    }
+    .cntnt p, li, form {
+        font-size: 3vw;
+    }
+    input, select, textarea {
+        padding: 0.4vw;
+        width: 80%;
+        font-size: 3vw;
+    }
+    .cntnt table {
+        font-size: 2vw;
+    }
+    .cntnt h2 {
+        font-size: 4vw;
+    }
+    #dropdown {
+        display: none;
+    }
+    #title {
+        margin-bottom: 0px;
+    }
+    .mnu p {
+        font-size: 2.7vw;
+    }
+    #tresc {
+        margin-top: 4vh;
+    }
+    #mnuzgory {
+        display: block;
+        background-color: gray;
+        overflow: auto;
+        margin-bottom: 4vh;
+        white-space: nowrap;
+    }
+    h1#logo {
+        border: 2vw groove gray;
+    }
+    #mnuzgory a {
+        display: inline-block;
+        color: gainsboro;
+        text-decoration: none;
+        padding: 2vh 1.4vw;
+        font-family: Calibri;
+        font-size: 2.3vw;
+    }
+    #mnuzgory a:hover {
+        background-color: dimgray;
+    }
+    #pwrtpc {
+        display: none;
+    }
+    #pwrttab  {
+        display: none;
+    }
+    .wbr {
+        display: none;
+    }
+    #wbrdivy {
+        display: block;
+    }
+    #wbrdivy a {
+        display: block;
+        width: 100%;
+        background-color: darkgray;
+        border-radius: 18px;
+        padding: 3vh 1vw;
+        margin-bottom: 1.4vh;
+        color: black;
+        text-align: center;
+        font-size: 4vw;
+        font-family: Calibri;
+        text-decoration: none;
+    }
+    #fotypc {
+        display: none;
+    }
+    .fotytab {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin-top: 20px;
+        margin: 10px;
+    }
+    .fotytab img {
+        width: 30vw;
+        height: 20vw;
+        object-fit: cover;
+        border: 2px solid dimgray;
+        border-radius: 17px;
+    }
+    #galeria {
+        height: 60vw;
+    }
+    .fotytab img:hover {
+        cursor: pointer;
+        animation-name: wyborimg;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    #stopka {
+        font-size: 3vw;
+      }
+
+    @keyframes wyborimg {
+        0% {
+            width: 30vw;
+            height: 20vw;
+            }
+        5% {
+            width: 33vw;
+            height: 23vw;
+        }
+        20% {
+            transform: rotate(3deg);
+            width: 33vw;
+            height: 23vw;
+        }
+        80% {
+            transform: rotate(-3deg);
+            width: 33vw;
+            height: 23vw;
+        }
+        95% {
+            transform: rotate(0deg);
+            width: 33vw;
+            height: 23vw;
+        }
+        100% {
+            width: 30vw;
+            height: 20vw;
+            }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin-bottom: 6.7vw;
+    }
+    #powrotzform img {
+        height: 11vw;
+      }
+    .cntnt p, li, form {
+        font-size: 4vw;
+    }
+    #title h1 {
+        font-size: 8.5vw;
+    }
+    .cntnt h2 {
+        font-size: 5.5vw;
+    }
+    .cntnt table {
+        font-size: 2.8vw;
+    }
+    #wbrdivy a {
+        padding: 6vh 1vw;
+        font-size: 7vw;
+    }
+    .mnu p {
+        font-size: 4vw;
+    }
+    h1#logo {
+        border: 3vw groove gray;
+    }
+    #mnuzgory {
+        display: none;
+    }
+    .topnav {
+        display: block;
+        background-color: gray;
+        position: relative;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        height: 9vw;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 8vw;
+        display: block;
+        font-family: Calibri;
+    } 
+    .topnav a:hover {
+        background-color: dimgray;
+    } 
+    .topnav a.icon {
+        background: dimgray;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+    .topnav a.icon img{
+        height: 9vw;
+        transform: rotate(90deg);
+    }
+    #galeria {
+        height: auto;
+    }
+    .fotytab {
+        display: none;
+    }
+    #fotytel {
+        display: block;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 1vw;
+    }
+    #fotytel img {
+        display: inline-block;
+        width: 40vw;
+        height: 30vw;
+        border: 2px solid dimgray;
+        border-radius: 17px;
+        margin: 0px 3vw;
+    }
+    #stopka {
+        font-size: 5vw;
+      }
+}

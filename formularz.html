@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularz</title>
+</head>
+<body>
+    <div id="title">
+        <h1>
+            Formularz
+        </h1>
+    </div>
+    <div id="powrotzform">
+        <a href="index.html">
+            <img src="img/strzalkaikona.svg" alt="Strona główna">
+        </a>
+    </div>
+    <div id="tresc">
+        <div class="cntnt">
+            <p>
+                Pochwal się, który z cudów świata jest twój ulubiony.
+            </p>
+            <form>
+                <label for="name">Imię:</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Wpisz imię">
+                <br>
+                <label for="mail">Adres email:</label>
+                <br>
+                <input type="text" id="mail" name="mail" placeholder="Wpisz adres email">
+                <br>
+                <label for="ulubiony">Ulubiona budowla:</label>
+                <br>
+                <select name="ulubiony" id="ulubiony">
+                    <option value="" disabled="" selected="">Wybierz budowlę</option>
+                    <option value="Stonehenge">Stonehenge</option>
+                    <option value="Koloseum">Koloseum</option>
+                    <option value="Tadź Mahal">Tadź Mahal</option>
+                    <option value="Wielki Mur Chiński">Wielki Mur Chiński</option>
+                    <option value="Angkor Wat">Angkor Wat</option>
+                    <option value="Hagia Sophia">Hagia Sophia</option>
+                    <option value="Katedra w Salisbury">Katedra w Salisbury</option>
+                </select>
+            </form>
+            <p id="pytanie">
+                Byłeś tam kiedyś na żywo?
+            </p>
+            <form>
+                <input type="radio" id="yes" name="yn" value="ta" class="radio">
+                <label for="yes">Tak</label>
+                <br>
+                <input type="radio" id="no" name="yn" value="nie" class="radio">
+                <label for="no">Nie</label>
+                <br>
+                <input type="radio" id="notforlong" name="yn" value="zaraz" class="radio">
+                <label for="notforlong">Nie, ale planuję w bliskiej przyszłości</label>
+                <br>
+                <label for="cmmnt">Komentarz:</label>
+                <br>
+                <textarea name="cmmnt" id="cmmnt" placeholder="Wpisz tu swój komentarz" cols="40" rows="5"></textarea>
+            </form>
+        </div>
+    </div>
+    <div id="stopka">
+        Tomasz Kwiatkowski 2ta
+    </div>
+</body>
+</html>
